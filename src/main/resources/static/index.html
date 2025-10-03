@@ -22,13 +22,17 @@
           <label for="author" class="mb-0">Author</label>
           <input type="text" id="author" class="form-control form-control-sm" />
         </div>
-        <button type="button" class="btn btn-primary btn-sm" onclick="app.loadBlueprints($('#author').val())">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          onclick="app.loadBlueprints($('#author').val())"
+        >
           Get blueprints
         </button>
       </div>
       <div class="d-flex gap-3">
         <div class="w-50">
-          <h3>Title</h3>
+          <h3 id="author-blueprints">Blueprints</h3>
           <table class="table align-middle my-3">
             <thead>
               <tr>
@@ -37,31 +41,13 @@
                 <th scope="col">Open</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>house</td>
-                <td>233</td>
-                <td>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Open
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>house</td>
-                <td>233</td>
-                <td>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Open
-                  </button>
-                </td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
-          <p>Total user points:</p>
+          <p id="total-points">Total user points:</p>
         </div>
         <div class="w-50">
           <h3>Current blueprint:</h3>
+          <p>Se implementara en el otro laboratorio</p>
         </div>
       </div>
     </div>
