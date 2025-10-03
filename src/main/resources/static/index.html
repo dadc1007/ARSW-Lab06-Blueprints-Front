@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blueprints</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="m-3">
+    <h1 class="mb-5">Blueprints</h1>
+    <div class="mx-5">
+      <div class="d-flex align-items-center gap-2 mb-5">
+        <div class="d-flex align-items-center gap-2">
+          <label for="author" class="mb-0">Author</label>
+          <input type="text" id="author" class="form-control form-control-sm" />
+        </div>
+        <button type="button" class="btn btn-primary btn-sm">
+          Get blueprints
+        </button>
+      </div>
+      <div class="d-flex gap-3">
+        <div class="w-50">
+          <h3>Title</h3>
+          <table class="table align-middle my-3">
+            <thead>
+              <tr>
+                <th scope="col">Blueprint name</th>
+                <th scope="col">Number of points</th>
+                <th scope="col">Open</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>house</td>
+                <td>233</td>
+                <td>
+                  <button type="button" class="btn btn-primary btn-sm">
+                    Open
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>house</td>
+                <td>233</td>
+                <td>
+                  <button type="button" class="btn btn-primary btn-sm">
+                    Open
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Total user points:</p>
+        </div>
+        <div class="w-50">
+          <h3>Current blueprint:</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
